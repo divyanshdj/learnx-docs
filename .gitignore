@@ -1,1 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# MkDocs build output
+/site/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Temporary or cache files
+*.log
+*.tmp
+*.bak
+*.cache
+
+#Ignore Folder
 /ignore
