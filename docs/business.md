@@ -1,12 +1,12 @@
 # **Business Use Case – LearnX LMS**
 
-## 1. Purpose
+## **1. Purpose**
 **LearnX** is a video-first learning platform that connects instructors and learners.  
 It focuses on simple course delivery, content discovery, and reliable media access.
 
 ---
 
-## 2. Business Use Cases
+## **2. Business Use Cases**
 
 | ID | Use Case | Description | Actor |
 |:--:|----------|-------------|-------|
