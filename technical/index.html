@@ -16,6 +16,8 @@
         <link rel="prev" href="../business/">
       
       
+        <link rel="next" href="../schema/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
@@ -374,18 +376,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-authentication-planned-flow" class="md-nav__link">
+  <a href="#1-authentication-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Authentication (Planned Flow)
+      1. Authentication Flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authorization-planned-flow" class="md-nav__link">
+  <a href="#2-authorization-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Authorization (Planned Flow)
+      2. Authorization Flow
     </span>
   </a>
   
@@ -401,9 +403,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#4-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      4. Conclusion
     </span>
   </a>
   
@@ -413,6 +415,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Schema Docs
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -444,18 +468,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-authentication-planned-flow" class="md-nav__link">
+  <a href="#1-authentication-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Authentication (Planned Flow)
+      1. Authentication Flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authorization-planned-flow" class="md-nav__link">
+  <a href="#2-authorization-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Authorization (Planned Flow)
+      2. Authorization Flow
     </span>
   </a>
   
@@ -471,9 +495,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#4-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      4. Conclusion
     </span>
   </a>
   
@@ -498,36 +522,34 @@
   
 
 
-<h1 id="technical-docs-learnx-lms"><strong>Technical Docs - LearnX LMS</strong><a class="headerlink" href="#technical-docs-learnx-lms" title="Permanent link">&para;</a></h1>
-<h2 id="1-authentication-planned-flow"><strong>1. Authentication (Planned Flow)</strong><a class="headerlink" href="#1-authentication-planned-flow" title="Permanent link">&para;</a></h2>
-<p>Authentication will ensure that only valid users (Instructor or Student) can access LearnX.
-Users will sign up or log in with basic credentials (like email and password).</p>
+<h1 id="technical-docs-learnx-lms"><strong>Technical Docs – LearnX LMS</strong><a class="headerlink" href="#technical-docs-learnx-lms" title="Permanent link">&para;</a></h1>
+<h2 id="1-authentication-flow"><strong>1. Authentication Flow</strong><a class="headerlink" href="#1-authentication-flow" title="Permanent link">&para;</a></h2>
+<p>Authentication ensures that only valid <strong>Instructors</strong> and <strong>Students</strong> can access LearnX.
+Users log in or sign up using email and password.</p>
 <pre class="mermaid"><code>flowchart TD
-    A[User Opens Login Page] --&gt; B[Enter Email &amp; Password]
+    A[Open Login Page] --&gt; B[Enter Email &amp; Password]
     B --&gt; C[Send Credentials to Server]
-    C --&gt; D[Verify User in Database]
-    D --&gt;|Valid| E[Generate Token &amp; Based on User/Instructor]
+    C --&gt; D[Verify in Database]
+    D --&gt;|Valid| E[Generate JWT Token]
     D --&gt;|Invalid| F[Show Error Message]
-    E --&gt; G[Redirect to Dashboard]</code></pre>
+    E --&gt; G{User Role}
+    G --&gt;|Instructor| H[Redirect to Instructor Dashboard]
+    G --&gt;|Student| I[Redirect to Student Dashboard]</code></pre>
 <p><strong>Purpose:</strong></p>
 <ul>
 <li>Secure user login</li>
 <li>Prevent unauthorized access</li>
 </ul>
 <hr />
-<h2 id="2-authorization-planned-flow"><strong>2. Authorization (Planned Flow)</strong><a class="headerlink" href="#2-authorization-planned-flow" title="Permanent link">&para;</a></h2>
-<p>Once authenticated, users will access pages based on their roles.</p>
+<h2 id="2-authorization-flow"><strong>2. Authorization Flow</strong><a class="headerlink" href="#2-authorization-flow" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    A[User Logs In] --&gt; B[System Checks Role]
-    B --&gt;|Instructor| C[Access Instructor Dashboard]
-    B --&gt;|Student| D[Access Student Dashboard]
-    B --&gt;|Unauthorized| E[Access Denied / Redirect to Login]</code></pre>
-<p><strong>Goal:</strong></p>
-<ul>
-<li>Ensure that <strong>Instructors</strong> can create/manage courses</li>
-<li>Ensure that <strong>Students</strong> can view/enroll in courses</li>
-<li>Keep all admin-level operations secure</li>
-</ul>
+    A[Login Successful] --&gt; B[Check Role]
+    B --&gt;|Instructor| C[Instructor Dashboard]
+    C --&gt; D[Create / Edit / Delete Courses]
+    C --&gt; E[View Enrolled Students]
+    B --&gt;|Student| F[Student Dashboard]
+    F --&gt; G[Browse &amp; Enroll Courses]
+    F --&gt; H[Watch Lessons]</code></pre>
 <hr />
 <h2 id="3-planned-tech-setup"><strong>3. Planned Tech Setup</strong><a class="headerlink" href="#3-planned-tech-setup" title="Permanent link">&para;</a></h2>
 <table>
@@ -564,18 +586,17 @@ Users will sign up or log in with basic credentials (like email and password).</
 </tr>
 <tr>
 <td><span style="font-size:1.15em; font-weight:700;"><strong>Mobile App</strong></span></td>
-<td><img src="https://blog.openreplay.com/images/building-a-pwa-with-react/images/hero.png" width="50px" alt="React"/></td>
+<td><img src="https://blog.openreplay.com/images/building-a-pwa-with-react/images/hero.png" width="50px" alt="React+PWA"/></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="summary"><strong>Summary</strong><a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>This technical plan outlines how authentication and authorization will be implemented in <strong>LearnX LMS</strong> once development starts.
-It focuses on:</p>
+<h2 id="4-conclusion"><strong>4. Conclusion</strong><a class="headerlink" href="#4-conclusion" title="Permanent link">&para;</a></h2>
+<p><strong>LearnX LMS</strong> uses secure authentication and role-based authorization to provide:</p>
 <ul>
-<li>A <strong>secure login system</strong></li>
-<li><strong>Role-based access</strong></li>
-<li><strong>Scalable structure</strong> ready for real-world use</li>
+<li>Clear separation of <strong>Instructor</strong> and <strong>Student</strong> views</li>
+<li>Safe and scalable system</li>
+<li>Ready for future features like progress tracking and payments</li>
 </ul>
 
 
@@ -621,6 +642,22 @@ It focuses on:</p>
             </div>
           </a>
         
+        
+          
+          <a href="../schema/" class="md-footer__link md-footer__link--next" aria-label="Next: Schema Docs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Schema Docs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

@@ -13,23 +13,23 @@
       
       
       
+        <link rel="prev" href="../technical/">
       
-        <link rel="next" href="functional/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>LearnX - Learning Management System</title>
+        <title>Schema Docs - LearnX - Learning Management System</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#learnx-learning-management-system" class="md-skip">
+        <a href="#learnx-lms-database-schema" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="LearnX - Learning Management System" class="md-header__button md-logo" aria-label="LearnX - Learning Management System" data-md-component="logo">
+    <a href=".." title="LearnX - Learning Management System" class="md-header__button md-logo" aria-label="LearnX - Learning Management System" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Schema Docs
             
           </span>
         </div>
@@ -228,7 +228,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="LearnX - Learning Management System" class="md-nav__button md-logo" aria-label="LearnX - Learning Management System" data-md-component="logo">
+    <a href=".." title="LearnX - Learning Management System" class="md-nav__button md-logo" aria-label="LearnX - Learning Management System" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -255,6 +255,94 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functional Use Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Business Use Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -272,7 +360,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Schema Docs
     
   </span>
   
@@ -280,12 +368,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Schema Docs
     
   </span>
   
@@ -308,36 +396,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-objective" class="md-nav__link">
+  <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Objective
+      1. Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-actors" class="md-nav__link">
+  <a href="#2-er-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Key Actors
+      2. ER Diagram
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-tech-stack" class="md-nav__link">
+  <a href="#3-collection-details" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Tech Stack
+      3. Collection Details
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-summary" class="md-nav__link">
+  <a href="#4-indexing" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Summary
+      4. Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Relationships
     </span>
   </a>
   
@@ -347,94 +444,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="functional/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Functional Use Case
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="business/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Business Use Case
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="technical/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Technical Docs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="schema/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Schema Docs
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -466,36 +475,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-objective" class="md-nav__link">
+  <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Objective
+      1. Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-actors" class="md-nav__link">
+  <a href="#2-er-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Key Actors
+      2. ER Diagram
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-tech-stack" class="md-nav__link">
+  <a href="#3-collection-details" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Tech Stack
+      3. Collection Details
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-summary" class="md-nav__link">
+  <a href="#4-indexing" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Summary
+      4. Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Relationships
     </span>
   </a>
   
@@ -520,90 +538,96 @@
   
 
 
-<h1 id="learnx-learning-management-system"><strong>LearnX - Learning Management System</strong><a class="headerlink" href="#learnx-learning-management-system" title="Permanent link">&para;</a></h1>
-<p><strong>LearnX</strong> is a video-based Learning Management System (LMS) built using the <strong>MERN stack</strong>  </p>
-<p><img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mongo,tailwind,vite" alt="Tech stack"/></p>
-<p>It allows <strong>instructors</strong> to create and manage courses, while <strong>students</strong> can learn, watch lessons, and track their progress easily.</p>
+<h1 id="learnx-lms-database-schema"><strong>LearnX LMS - Database Schema</strong><a class="headerlink" href="#learnx-lms-database-schema" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview"><strong>1. Overview</strong><a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>This schema defines the core data structure for <strong>LearnX LMS</strong>, including <strong>Users, Roles, Courses, Modules, and Enrollments</strong>.
+It ensures relational integrity and supports the platform's main functionalities: authentication, course creation, media management, and enrollment tracking.</p>
+<h2 id="2-er-diagram"><strong>2. ER Diagram</strong><a class="headerlink" href="#2-er-diagram" title="Permanent link">&para;</a></h2>
+<p><img alt="logo" src="../assets/mermaid.png" /></p>
 <hr />
-<h2 id="1-objective"><strong>1. Objective</strong><a class="headerlink" href="#1-objective" title="Permanent link">&para;</a></h2>
-<p>The goal of <strong>LearnX</strong> is to create a <strong>scalable</strong>, <strong>user-friendly</strong>, and <strong>secure</strong> online learning platform.<br />
-It supports <strong>role-based access</strong>, smooth <strong>video uploads</strong>, and <strong>course management</strong>, ensuring an effective learning experience for both instructors and students.</p>
-<hr />
-<h2 id="2-key-actors"><strong>2. Key Actors</strong><a class="headerlink" href="#2-key-actors" title="Permanent link">&para;</a></h2>
+<h2 id="3-collection-details"><strong>3. Collection Details</strong><a class="headerlink" href="#3-collection-details" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Actor</strong></th>
-<th><strong>Roles / Responsibility</strong></th>
+<th>Collection</th>
+<th>Fields</th>
+<th>Notes / Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Instructor</strong></td>
-<td>Creates and manages courses, uploads videos, and monitors enrollments.</td>
+<td><strong>USERS</strong></td>
+<td><code>_id</code>, name, email, password, timestamps</td>
+<td>Unique email, hashed password, supports login &amp; profile</td>
 </tr>
 <tr>
-<td><strong>Student</strong></td>
-<td>Enrolls in courses, views video content, and tracks progress.</td>
+<td><strong>ROLES</strong></td>
+<td><code>_id</code>, name, timestamps</td>
+<td>Defines user roles (Instructor / Student)</td>
 </tr>
 <tr>
-<td><strong>System</strong></td>
-<td>Handles authentication, video storage, progress tracking, and overall user access control.</td>
+<td><strong>USER_ROLES</strong></td>
+<td><code>_id</code>, userId, roleId, timestamps</td>
+<td>Links users with roles; many-to-many mapping</td>
+</tr>
+<tr>
+<td><strong>COURSES</strong></td>
+<td><code>_id</code>, title, description, instructorId, timestamps</td>
+<td>Stores course details created by instructors</td>
+</tr>
+<tr>
+<td><strong>MODULES</strong></td>
+<td><code>_id</code>, title, courseId, videoUrl, duration, timestamps</td>
+<td>Lessons within a course</td>
+</tr>
+<tr>
+<td><strong>ENROLLMENTS</strong></td>
+<td><code>_id</code>, studentId, courseId, status, timestamps</td>
+<td>Tracks which students are enrolled in which courses</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="3-tech-stack"><strong>3. Tech Stack</strong><a class="headerlink" href="#3-tech-stack" title="Permanent link">&para;</a></h2>
+<h2 id="4-indexing"><strong>4. Indexing</strong><a class="headerlink" href="#4-indexing" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Layer</strong></th>
-<th><strong>Technology</strong></th>
-<th><strong>Purpose</strong></th>
+<th>Collection</th>
+<th>Field(s)</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Frontend</td>
-<td>React + Vite + Tailwind + shadcn</td>
-<td>Build a clean and responsive UI</td>
+<td>USERS</td>
+<td>email</td>
+<td>Unique login; fast user search</td>
 </tr>
 <tr>
-<td>Backend</td>
-<td>Node.js + Express</td>
-<td>Handle APIs and business logic</td>
+<td>USER_ROLES</td>
+<td>userId + roleId</td>
+<td>Prevent duplicate roles</td>
 </tr>
 <tr>
-<td>Database</td>
-<td>MongoDB + Mongoose</td>
-<td>Store users, courses, and video data</td>
+<td>COURSES</td>
+<td>instructorId</td>
+<td>Quickly fetch all courses by instructor</td>
 </tr>
 <tr>
-<td>Media</td>
-<td>Cloudinary</td>
-<td>Host and manage course videos</td>
-</tr>
-<tr>
-<td>Payment</td>
-<td>PayPal SDK</td>
-<td>Manage secure transactions</td>
-</tr>
-<tr>
-<td>Auth</td>
-<td>JWT + bcrypt</td>
-<td>Provide secure login and user sessions</td>
-</tr>
-<tr>
-<td>PWA / Mobile</td>
-<td>React + Service Workers</td>
-<td>Enable offline access and mobile installation</td>
+<td>ENROLLMENTS</td>
+<td>studentId, courseId</td>
+<td>Avoid duplicate enrollment; fast progress lookup</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="4-summary"><strong>4. Summary</strong><a class="headerlink" href="#4-summary" title="Permanent link">&para;</a></h2>
-<p>LearnX combines powerful backend logic with a fast and modern frontend to deliver a smooth e-learning experience.<br />
-With <strong>PWA support</strong>, users can also <strong>install LearnX as a mobile app</strong>, making learning accessible anywhere, anytime.</p>
+<h2 id="5-relationships"><strong>5. Relationships</strong><a class="headerlink" href="#5-relationships" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Users ↔ Roles</strong>: Many-to-many via <code>USER_ROLES</code></li>
+<li><strong>Instructor ↔ Courses</strong>: One-to-many</li>
+<li><strong>Course ↔ Modules</strong>: One-to-many</li>
+<li><strong>Students ↔ Courses</strong>: Many-to-many via <code>ENROLLMENTS</code></li>
+</ul>
 
 
 
@@ -632,22 +656,22 @@ With <strong>PWA support</strong>, users can also <strong>install LearnX as a mo
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-        
           
-          <a href="functional/" class="md-footer__link md-footer__link--next" aria-label="Next: Functional Use Case">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Functional Use Case
-              </div>
-            </div>
+          <a href="../technical/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Technical Docs">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Technical Docs
+              </div>
             </div>
           </a>
+        
         
       </nav>
     
@@ -700,10 +724,10 @@ With <strong>PWA support</strong>, users can also <strong>install LearnX as a mo
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "search.highlight", "search.suggest"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
       
