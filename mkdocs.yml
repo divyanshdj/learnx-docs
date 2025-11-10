@@ -35,6 +35,7 @@ nav:
   - Functional Use Case: functional.md
   - Business Use Case: business.md
   - Technical Docs: technical.md
+  - Schema Docs: schema.md
 
 extra:
   social:
