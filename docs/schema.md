@@ -16,12 +16,12 @@ It ensures relational integrity and supports the platform's main functionalities
 
 | Collection      | Fields                                                 | Notes / Purpose                                         |
 | --------------- | ------------------------------------------------------ | ------------------------------------------------------- |
-| **USERS**       | `_id`, name, email, password, timestamps               | Unique email, hashed password, supports login & profile |
-| **ROLES**       | `_id`, name, timestamps                                | Defines user roles (Instructor / Student)               |
-| **USER_ROLES**  | `_id`, userId, roleId, timestamps                      | Links users with roles; many-to-many mapping            |
-| **COURSES**     | `_id`, title, description, instructorId, timestamps    | Stores course details created by instructors            |
-| **MODULES**     | `_id`, title, courseId, videoUrl, duration, timestamps | Lessons within a course  |
-| **ENROLLMENTS** | `_id`, studentId, courseId, status, timestamps         | Tracks which students are enrolled in which courses     |
+| **USERS**       | `_id`, `name`, `email`, `password`, `timestamps`               | Unique email, hashed password, supports login & profile |
+| **ROLES**       | `_id`, `name`, `timestamps`                                | Defines user roles (Instructor / Student)               |
+| **USER_ROLES**  | `_id`, `userId`, `roleId`, `timestamps`                      | Links users with roles; many-to-many mapping            |
+| **COURSES**     | `_id`, `title`, `description`, `instructorId`, `timestamps`    | Stores course details created by instructors            |
+| **MODULES**     | `_id`, `title`, `courseId`, `videoUrl`, `duration`, `timestamps` | Lessons within a course  |
+| **ENROLLMENTS** | `_id`, `studentId`, `courseId`, `status`, `timestamps`         | Tracks which students are enrolled in which courses     |
 
 ---
 

@@ -22,6 +22,8 @@
 
 ### **2.1 User Registration & Login**
 
+Shows how users sign up or log in. After validation, a token is generated and they’re redirected to their dashboard based on role.
+
 ```mermaid
 flowchart TD
     A[User Opens App] --> B[Choose Sign Up or Login]
@@ -40,6 +42,8 @@ flowchart TD
 
 ### **2.2 Video Playback Flow**
 
+Students open a lesson and play the video directly from Cloudinary. Once the video is completed, they can mark the lesson as done to track progress.
+
 ```mermaid
 flowchart LR
     A[Student Opens Lesson Page] --> B[Click Lesson Tabs]
@@ -50,6 +54,8 @@ flowchart LR
 ---
 
 ### **2.3 Enrollment Flow**
+
+Students select a course and proceed to the payment gateway. On successful payment, the course is added to their dashboard and they can start learning. If the payment fails, an error message is shown.
 
 ```mermaid
 flowchart TD
@@ -79,6 +85,8 @@ flowchart TD
 
 ## **4. Instructor & Student Workflow**
 
+Instructors create courses by adding details and uploading lesson videos to Cloudinary. Once published, these courses appear for students to browse and enroll. Students can join courses, access lessons, watch videos, and mark their progress as completed from their dashboard.
+
 ```mermaid
 flowchart TD
     A[Instructor Dashboard] --> B[Create Course]
@@ -93,6 +101,7 @@ flowchart TD
     L --> M[Enrollment Confirmed]
     M --> N[Access Lessons]
     N --> O[Watch Videos]
+    O --> P[Mark Course as Completed]
 ```
 
 ---
@@ -111,6 +120,8 @@ flowchart TD
 ---
 
 ## **6. System Flow**
+
+The React + Vite frontend interacts with the Node.js + Express backend via APIs. The backend connects to MongoDB for data storage and Cloudinary for media handling. The PWA setup ensures fast, responsive, user experience across devices.
 
 ```mermaid
 graph LR
@@ -132,6 +143,7 @@ graph LR
 | Unauthorized access | Redirect to dashboard              |
 | Upload failed       | Retry or notify user               |
 | Video not loading   | Retry or show fallback             |
+| Instructor deletes a course with enrolled students | Currently, the course is deleted but in the future, a soft delete or “inactive” status can be added to avoid data loss for students. |
 
 --- 
 
