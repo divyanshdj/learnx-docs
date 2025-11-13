@@ -16,7 +16,7 @@
         <link rel="prev" href="../business/">
       
       
-        <link rel="next" href="../schema/">
+        <link rel="next" href="../dfd/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Technical Docs - LearnX - Learning Management System</title>
+        <title>Architecture & Docs - LearnX - Learning Management System</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Technical Docs
+              Architecture & Docs
             
           </span>
         </div>
@@ -327,6 +327,46 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -340,7 +380,7 @@
   
   
   <span class="md-ellipsis">
-    Technical Docs
+    Architecture & Docs
     
   </span>
   
@@ -353,7 +393,7 @@
   
   
   <span class="md-ellipsis">
-    Technical Docs
+    Architecture & Docs
     
   </span>
   
@@ -412,28 +452,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-data-flow-diagram-dfd" class="md-nav__link">
+  <a href="#5-api-endpoints-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Data Flow Diagram (DFD)
+      5. API Endpoints Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Data Flow Diagram (DFD)">
+    <nav class="md-nav" aria-label="5. API Endpoints Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dfd-level-0-context-diagram" class="md-nav__link">
+  <a href="#i-authentication-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      DFD Level 0 - Context Diagram
+      I. Authentication Endpoints
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dfd-level-1-system-process-breakdown" class="md-nav__link">
+  <a href="#ii-user-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      DFD Level 1 - System Process Breakdown
+      II. User Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-course-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. Course Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-enrollment-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Enrollment Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-module-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Module Endpoints
     </span>
   </a>
   
@@ -445,78 +512,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-testing-plan" class="md-nav__link">
+  <a href="#6-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Testing Plan
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-api-endpoints-planned" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. API Endpoints (Planned)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="7. API Endpoints (Planned)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      User APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#course-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Course APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#module-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Module APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enrollment-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enrollment APIs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Conclusion
+      6. Conclusion
     </span>
   </a>
   
@@ -525,6 +523,60 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dfd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Flow Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -615,28 +667,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-data-flow-diagram-dfd" class="md-nav__link">
+  <a href="#5-api-endpoints-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Data Flow Diagram (DFD)
+      5. API Endpoints Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Data Flow Diagram (DFD)">
+    <nav class="md-nav" aria-label="5. API Endpoints Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dfd-level-0-context-diagram" class="md-nav__link">
+  <a href="#i-authentication-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      DFD Level 0 - Context Diagram
+      I. Authentication Endpoints
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dfd-level-1-system-process-breakdown" class="md-nav__link">
+  <a href="#ii-user-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      DFD Level 1 - System Process Breakdown
+      II. User Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-course-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. Course Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iv-enrollment-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Enrollment Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-module-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Module Endpoints
     </span>
   </a>
   
@@ -648,78 +727,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-testing-plan" class="md-nav__link">
+  <a href="#6-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Testing Plan
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-api-endpoints-planned" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. API Endpoints (Planned)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="7. API Endpoints (Planned)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      User APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#course-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Course APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#module-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Module APIs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enrollment-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enrollment APIs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Conclusion
+      6. Conclusion
     </span>
   </a>
   
@@ -870,106 +880,149 @@ Users log in or sign up using email and password.</p>
 </tbody>
 </table>
 <hr />
-<h2 id="5-data-flow-diagram-dfd"><strong>5. Data Flow Diagram (DFD)</strong><a class="headerlink" href="#5-data-flow-diagram-dfd" title="Permanent link">&para;</a></h2>
-<p>The Data Flow Diagram (DFD) represents how data flows within the <strong>LearnX LMS</strong> platform. It visually explains how users (students and instructors) interact with the system and how data is processed, stored, and managed across different components.</p>
-<hr />
-<h3 id="dfd-level-0-context-diagram"><strong>DFD Level 0 - Context Diagram</strong><a class="headerlink" href="#dfd-level-0-context-diagram" title="Permanent link">&para;</a></h3>
-<p>This level provides an overview of the complete system. It shows how <strong>students</strong> and <strong>instructors</strong> communicate with the <strong>LearnX LMS</strong>, which handles authentication, course management, and media storage using <strong>MongoDB Atlas</strong> and <strong>Cloudinary</strong>.</p>
-<p><img alt="logo" src="../assets/dfd_level0.png" /></p>
-<hr />
-<h3 id="dfd-level-1-system-process-breakdown"><strong>DFD Level 1 - System Process Breakdown</strong><a class="headerlink" href="#dfd-level-1-system-process-breakdown" title="Permanent link">&para;</a></h3>
-<p>The Level 1 diagram expands the system into key functional processes <strong>Authentication</strong>, <strong>Course Management</strong>, and <strong>Course Completion</strong>. It illustrates how data moves between users, the database, and external services to support secure login, course handling, and student progress.</p>
-<p><img alt="logo" src="../assets/dfd_level1.png" /></p>
-<hr />
-<h2 id="6-testing-plan"><strong>6. Testing Plan</strong><a class="headerlink" href="#6-testing-plan" title="Permanent link">&para;</a></h2>
-<p>Testing strategy to ensure all features work correctly</p>
+<h2 id="5-api-endpoints-reference"><strong>5. API Endpoints Reference</strong><a class="headerlink" href="#5-api-endpoints-reference" title="Permanent link">&para;</a></h2>
+<h3 id="i-authentication-endpoints"><strong>I. Authentication Endpoints</strong><a class="headerlink" href="#i-authentication-endpoints" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th><strong>Area</strong></th>
-<th><strong>What to Test</strong></th>
-<th><strong>Test Cases</strong></th>
+<th><strong>Endpoint</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Login Form</strong></td>
-<td>User can log in</td>
-<td>- Valid email + password → login success<br>- Wrong password → show error<br>- Empty field → show error</td>
+<td><code>/api/auth/register</code></td>
+<td>POST</td>
+<td>Create new user account</td>
 </tr>
 <tr>
-<td><strong>Registration</strong></td>
-<td>New user can sign up</td>
-<td>- Fill all fields → account created<br>- Same email twice → error</td>
+<td><code>/api/auth/login</code></td>
+<td>POST</td>
+<td>User login and JWT generation</td>
 </tr>
 <tr>
-<td><strong>Course List</strong></td>
-<td>Shows courses</td>
-<td>- Page shows course cards<br>- Search box finds course by name<br>- No results → "Not found" message</td>
+<td><code>/api/auth/me</code></td>
+<td>GET</td>
+<td>Get current user profile</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ii-user-endpoints"><strong>II. User Endpoints</strong><a class="headerlink" href="#ii-user-endpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Endpoint</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/users/profile</code></td>
+<td>GET</td>
+<td>Get user profile data</td>
 </tr>
 <tr>
-<td><strong>Course Details</strong></td>
-<td>Shows course info</td>
-<td>- Title, price, instructor name visible<br>- Enroll button works</td>
+<td><code>/api/users/profile</code></td>
+<td>PUT</td>
+<td>Update user profile</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iii-course-endpoints"><strong>III. Course Endpoints</strong><a class="headerlink" href="#iii-course-endpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Endpoint</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/courses</code></td>
+<td>GET</td>
+<td>Get all courses (public)</td>
 </tr>
 <tr>
-<td><strong>Enrollment</strong></td>
-<td>User can join course</td>
-<td>- Click Enroll → "You are enrolled" message</td>
+<td><code>/api/courses</code></td>
+<td>POST</td>
+<td>Create new course (instructor only)</td>
 </tr>
 <tr>
-<td><strong>Course Creation</strong></td>
-<td>Instructor adds course</td>
-<td>- Click Publish → course appears in list</td>
+<td><code>/api/courses/:id</code></td>
+<td>GET</td>
+<td>Get course details</td>
 </tr>
 <tr>
-<td><strong>API: Login</strong></td>
-<td>POST /auth/login</td>
-<td>- Correct email/password → get token<br>- Wrong password → error</td>
+<td><code>/api/courses/:id</code></td>
+<td>PUT</td>
+<td>Update course (instructor only)</td>
 </tr>
 <tr>
-<td><strong>API: Get Courses</strong></td>
-<td>GET /api/courses</td>
-<td>- Returns list of courses<br>- Search works</td>
+<td><code>/api/courses/:id</code></td>
+<td>DELETE</td>
+<td>Delete course (instructor only)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iv-enrollment-endpoints"><strong>IV. Enrollment Endpoints</strong><a class="headerlink" href="#iv-enrollment-endpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Endpoint</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/enroll/:courseId</code></td>
+<td>POST</td>
+<td>Enroll in course</td>
+</tr>
+<tr>
+<td><code>/api/enroll/my-courses</code></td>
+<td>GET</td>
+<td>Get user's enrolled courses</td>
+</tr>
+</tbody>
+</table>
+<h3 id="v-module-endpoints"><strong>V. Module Endpoints</strong><a class="headerlink" href="#v-module-endpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Endpoint</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/courses/:id/modules</code></td>
+<td>GET</td>
+<td>Get course modules</td>
+</tr>
+<tr>
+<td><code>/api/courses/:id/modules</code></td>
+<td>POST</td>
+<td>Add module to course</td>
+</tr>
+<tr>
+<td><code>/api/modules/:id</code></td>
+<td>PUT</td>
+<td>Update module</td>
+</tr>
+<tr>
+<td><code>/api/modules/:id</code></td>
+<td>DELETE</td>
+<td>Delete module</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="7-api-endpoints-planned"><strong>7. API Endpoints (Planned)</strong><a class="headerlink" href="#7-api-endpoints-planned" title="Permanent link">&para;</a></h2>
-<h3 id="authentication-apis"><strong>Authentication APIs</strong><a class="headerlink" href="#authentication-apis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>POST /api/auth/register</code> - User registration</li>
-<li><code>POST /api/auth/login</code> - User login</li>
-<li><code>POST /api/auth/logout</code> - User logout</li>
-<li><code>GET /api/auth/me</code> - Get current user</li>
-</ul>
-<h3 id="user-apis"><strong>User APIs</strong><a class="headerlink" href="#user-apis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>GET /api/users/profile</code> - Get user profile</li>
-<li><code>PUT /api/users/profile</code> - Update user profile</li>
-</ul>
-<h3 id="course-apis"><strong>Course APIs</strong><a class="headerlink" href="#course-apis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>GET /api/courses</code> - Get all courses (with search/filter)</li>
-<li><code>GET /api/courses/:id</code> - Get single course details</li>
-<li><code>POST /api/courses</code> - Create new course (Instructor only)</li>
-<li><code>PUT /api/courses/:id</code> - Update course (Instructor only)</li>
-<li><code>DELETE /api/courses/:id</code> - Delete course (Instructor only)</li>
-</ul>
-<h3 id="module-apis"><strong>Module APIs</strong><a class="headerlink" href="#module-apis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>GET /api/courses/:id/modules</code> - Get course modules</li>
-<li><code>POST /api/courses/:id/modules</code> - Add module to course</li>
-<li><code>PUT /api/modules/:id</code> - Update module</li>
-<li><code>DELETE /api/modules/:id</code> - Delete module</li>
-</ul>
-<h3 id="enrollment-apis"><strong>Enrollment APIs</strong><a class="headerlink" href="#enrollment-apis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>POST /api/enroll/:courseId</code> - Enroll in course (with test payment)</li>
-<li><code>GET /api/enroll/my-courses</code> - Get enrolled courses</li>
-</ul>
-<hr />
-<h2 id="8-conclusion"><strong>8. Conclusion</strong><a class="headerlink" href="#8-conclusion" title="Permanent link">&para;</a></h2>
+<h2 id="6-conclusion"><strong>6. Conclusion</strong><a class="headerlink" href="#6-conclusion" title="Permanent link">&para;</a></h2>
 <p><strong>LearnX LMS</strong> uses secure authentication and role-based authorization to provide:</p>
 <ul>
 <li>Clear separation of <strong>Instructor</strong> and <strong>Student</strong> views</li>
@@ -1022,13 +1075,13 @@ Users log in or sign up using email and password.</p>
         
         
           
-          <a href="../schema/" class="md-footer__link md-footer__link--next" aria-label="Next: Schema Docs">
+          <a href="../dfd/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Flow Diagrams">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Schema Docs
+                Data Flow Diagrams
               </div>
             </div>
             <div class="md-footer__button md-icon">

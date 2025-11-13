@@ -351,27 +351,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-user-registration-login" class="md-nav__link">
+  <a href="#i-user-registration-login" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 User Registration &amp; Login
+      I. User Registration &amp; Login
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-video-playback-flow" class="md-nav__link">
+  <a href="#ii-video-playback-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Video Playback Flow
+      II. Video Playback Flow
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-enrollment-flow" class="md-nav__link">
+  <a href="#iii-enrollment-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 Enrollment Flow
+      III. Enrollment Flow
     </span>
   </a>
   
@@ -472,18 +472,110 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../technical/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Technical Docs
+    Architecture & Docs
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dfd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Flow Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -556,27 +648,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-user-registration-login" class="md-nav__link">
+  <a href="#i-user-registration-login" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 User Registration &amp; Login
+      I. User Registration &amp; Login
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-video-playback-flow" class="md-nav__link">
+  <a href="#ii-video-playback-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Video Playback Flow
+      II. Video Playback Flow
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-enrollment-flow" class="md-nav__link">
+  <a href="#iii-enrollment-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 Enrollment Flow
+      III. Enrollment Flow
     </span>
   </a>
   
@@ -701,7 +793,7 @@
 </table>
 <hr />
 <h2 id="2-functional-flow"><strong>2. Functional Flow</strong><a class="headerlink" href="#2-functional-flow" title="Permanent link">&para;</a></h2>
-<h3 id="21-user-registration-login"><strong>2.1 User Registration &amp; Login</strong><a class="headerlink" href="#21-user-registration-login" title="Permanent link">&para;</a></h3>
+<h3 id="i-user-registration-login"><strong>I. User Registration &amp; Login</strong><a class="headerlink" href="#i-user-registration-login" title="Permanent link">&para;</a></h3>
 <p>Shows how users sign up or log in. After validation, a token is generated and they’re redirected to their dashboard based on role.</p>
 <pre class="mermaid"><code>flowchart TD
     A[User Opens App] --&gt; B[Choose Sign Up or Login]
@@ -715,14 +807,14 @@
     H --&gt;|Student| J[Redirect to Student Dashboard]
     F --&gt;|Invalid| K[Show Error Message]</code></pre>
 <hr />
-<h3 id="22-video-playback-flow"><strong>2.2 Video Playback Flow</strong><a class="headerlink" href="#22-video-playback-flow" title="Permanent link">&para;</a></h3>
+<h3 id="ii-video-playback-flow"><strong>II. Video Playback Flow</strong><a class="headerlink" href="#ii-video-playback-flow" title="Permanent link">&para;</a></h3>
 <p>Students open a lesson and play the video directly from Cloudinary. Once the video is completed, they can mark the lesson as done to track progress.</p>
 <pre class="mermaid"><code>flowchart LR
     A[Student Opens Lesson Page] --&gt; B[Click Lesson Tabs]
     B --&gt; C[Stream Video in Player]
     C --&gt; D[Mark Lesson as Completed]</code></pre>
 <hr />
-<h3 id="23-enrollment-flow"><strong>2.3 Enrollment Flow</strong><a class="headerlink" href="#23-enrollment-flow" title="Permanent link">&para;</a></h3>
+<h3 id="iii-enrollment-flow"><strong>III. Enrollment Flow</strong><a class="headerlink" href="#iii-enrollment-flow" title="Permanent link">&para;</a></h3>
 <p>Students select a course and proceed to the payment gateway. On successful payment, the course is added to their dashboard and they can start learning. If the payment fails, an error message is shown.</p>
 <pre class="mermaid"><code>flowchart TD
     A[Student Selects Course] --&gt; B[Click Enroll]
