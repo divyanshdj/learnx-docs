@@ -34,7 +34,10 @@ nav:
   - Home: index.md
   - Functional Use Case: functional.md
   - Business Use Case: business.md
-  - Technical Docs: technical.md
+  - Technical Documentation:
+    - Architecture & Docs: technical.md
+    - Data Flow Diagrams: dfd.md
+    - Testing Plan: testing.md
   - Schema Docs: schema.md
 
 extra:

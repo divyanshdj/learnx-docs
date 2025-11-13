@@ -50,95 +50,70 @@ flowchart TD
 
 ## **4. Tech Stack**
 
-| **Layer** | **Logo** | **Technology** | **Version** |
-|-----------|----------|----------------|-------------|
-| **Programming Language** | <img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"/> | JavaScript | ES14 |
-| **Frontend Library** | <img src="https://skillicons.dev/icons?i=react" width="32" alt="React"/> | React | 19.2.0 |
-| **CSS Framework** | <img src="https://skillicons.dev/icons?i=tailwind" width="32" alt="Tailwind CSS"/> | Tailwind CSS | 4.1.17 |
-| **Build Tool** | <img src="https://skillicons.dev/icons?i=vite" width="32" alt="Vite"/> | Vite | 7.2.2 |
-| **Runtime Environment** | <img src="https://skillicons.dev/icons?i=nodejs" width="32" alt="Node.js"/> | Node.js | 22.12.0 |
-| **Backend Framework** | <img src="https://skillicons.dev/icons?i=express" width="32" alt="Express"/> | Express | 5.1.0 |
-| **Database** | <img src="https://skillicons.dev/icons?i=mongodb" width="32" alt="MongoDB"/> | MongoDB | 8.0 |
-| **Media Storage** | <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/231498caad5aa2ab9f05c4b6410fb5f7a8d3e424/icons/Cloudinary-Dark.svg" width="32" alt="Cloudinary"/> | Cloudinary | 1.45.0 |
-| **Payment Integration (Test)** | <img src="https://cdn-icons-png.flaticon.com/128/174/174861.png" width="32" alt="PayPal"/> | PayPal SDK | 1.8.0 |
-| **Authentication** | <img src="https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png" width="32" alt="JWT"/> | JWT | 9.0.2 |
-| **Mobile Experience** | <img src="https://blog.openreplay.com/images/building-a-pwa-with-react/images/hero.png" width="32" alt="React+PWA"/> | React PWA | Manifest V3 |
-| **Cloud Hosting** | <img src="https://skillicons.dev/icons?i=aws" width="32" alt="AWS"/> | AWS | Latest |
-| **Version Control** | <img src="https://skillicons.dev/icons?i=github,githubactions" width="64" alt="GitHub"/> | GitHub | Latest |
+| **Layer**                      | **Logo**                                                                                                                                                           | **Technology** | **Version** |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | ----------- |
+| **Programming Language**       | <img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"/>                                                                                         | JavaScript     | ES14        |
+| **Frontend Library**           | <img src="https://skillicons.dev/icons?i=react" width="32" alt="React"/>                                                                                           | React          | 19.2.0      |
+| **CSS Framework**              | <img src="https://skillicons.dev/icons?i=tailwind" width="32" alt="Tailwind CSS"/>                                                                                 | Tailwind CSS   | 4.1.17      |
+| **Build Tool**                 | <img src="https://skillicons.dev/icons?i=vite" width="32" alt="Vite"/>                                                                                             | Vite           | 7.2.2       |
+| **Runtime Environment**        | <img src="https://skillicons.dev/icons?i=nodejs" width="32" alt="Node.js"/>                                                                                        | Node.js        | 22.12.0     |
+| **Backend Framework**          | <img src="https://skillicons.dev/icons?i=express" width="32" alt="Express"/>                                                                                       | Express        | 5.1.0       |
+| **Database**                   | <img src="https://skillicons.dev/icons?i=mongodb" width="32" alt="MongoDB"/>                                                                                       | MongoDB        | 8.0         |
+| **Media Storage**              | <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/231498caad5aa2ab9f05c4b6410fb5f7a8d3e424/icons/Cloudinary-Dark.svg" width="32" alt="Cloudinary"/> | Cloudinary     | 1.45.0      |
+| **Payment Integration (Test)** | <img src="https://cdn-icons-png.flaticon.com/128/174/174861.png" width="32" alt="PayPal"/>                                                                         | PayPal SDK     | 1.8.0       |
+| **Authentication**             | <img src="https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png" width="32" alt="JWT"/>                                                                       | JWT            | 9.0.2       |
+| **Mobile Experience**          | <img src="https://blog.openreplay.com/images/building-a-pwa-with-react/images/hero.png" width="32" alt="React+PWA"/>                                               | React PWA      | Manifest V3 |
+| **Cloud Hosting**              | <img src="https://skillicons.dev/icons?i=aws" width="32" alt="AWS"/>                                                                                               | AWS            | Latest      |
+| **Version Control**            | <img src="https://skillicons.dev/icons?i=github,githubactions" width="64" alt="GitHub"/>                                                                           | GitHub         | Latest      |
 
 ---
 
-## **5. Data Flow Diagram (DFD)**
+## **5. API Endpoints Reference**
 
-The Data Flow Diagram (DFD) represents how data flows within the **LearnX LMS** platform. It visually explains how users (students and instructors) interact with the system and how data is processed, stored, and managed across different components.
+### **I. Authentication Endpoints**
 
----
+| **Endpoint**         | **Method** | **Description**               |
+| -------------------- | ---------- | ----------------------------- |
+| `/api/auth/register` | POST       | Create new user account       |
+| `/api/auth/login`    | POST       | User login and JWT generation |
+| `/api/auth/me`       | GET        | Get current user profile      |
 
-### **DFD Level 0 - Context Diagram**
+### **II. User Endpoints**
 
-This level provides an overview of the complete system. It shows how **students** and **instructors** communicate with the **LearnX LMS**, which handles authentication, course management, and media storage using **MongoDB Atlas** and **Cloudinary**.
+| **Endpoint**         | **Method** | **Description**       |
+| -------------------- | ---------- | --------------------- |
+| `/api/users/profile` | GET        | Get user profile data |
+| `/api/users/profile` | PUT        | Update user profile   |
 
-![logo](assets/dfd_level0.png)
+### **III. Course Endpoints**
 
----
+| **Endpoint**       | **Method** | **Description**                     |
+| ------------------ | ---------- | ----------------------------------- |
+| `/api/courses`     | GET        | Get all courses (public)            |
+| `/api/courses`     | POST       | Create new course (instructor only) |
+| `/api/courses/:id` | GET        | Get course details                  |
+| `/api/courses/:id` | PUT        | Update course (instructor only)     |
+| `/api/courses/:id` | DELETE     | Delete course (instructor only)     |
 
-### **DFD Level 1 - System Process Breakdown**
+### **IV. Enrollment Endpoints**
 
-The Level 1 diagram expands the system into key functional processes **Authentication**, **Course Management**, and **Course Completion**. It illustrates how data moves between users, the database, and external services to support secure login, course handling, and student progress.
+| **Endpoint**             | **Method** | **Description**             |
+| ------------------------ | ---------- | --------------------------- |
+| `/api/enroll/:courseId`  | POST       | Enroll in course            |
+| `/api/enroll/my-courses` | GET        | Get user's enrolled courses |
 
-![logo](assets/dfd_level1.png)
+### **V. Module Endpoints**
 
----
-
-## **6. Testing Plan**
-
-Testing strategy to ensure all features work correctly
-
-| **Area**              | **What to Test**                              | **Test Cases**                                                                 |
-|-----------------------|-----------------------------------------------|--------------------------------------------------------------------------------|
-| **Login Form**        | User can log in                               | - Valid email + password → login success<br>- Wrong password → show error<br>- Empty field → show error |
-| **Registration**      | New user can sign up                          | - Fill all fields → account created<br>- Same email twice → error |
-| **Course List**       | Shows courses                                 | - Page shows course cards<br>- Search box finds course by name<br>- No results → "Not found" message |
-| **Course Details**    | Shows course info                             | - Title, price, instructor name visible<br>- Enroll button works |
-| **Enrollment**        | User can join course                          | - Click Enroll → "You are enrolled" message |
-| **Course Creation**   | Instructor adds course                        | - Click Publish → course appears in list |
-| **API: Login**        | POST /auth/login                              | - Correct email/password → get token<br>- Wrong password → error |
-| **API: Get Courses**  | GET /api/courses                              | - Returns list of courses<br>- Search works |
-
----
-
-## **7. API Endpoints (Planned)**
-
-### **Authentication APIs**
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `GET /api/auth/me` - Get current user
-
-### **User APIs**
-- `GET /api/users/profile` - Get user profile
-- `PUT /api/users/profile` - Update user profile
-
-### **Course APIs**
-- `GET /api/courses` - Get all courses (with search/filter)
-- `GET /api/courses/:id` - Get single course details
-- `POST /api/courses` - Create new course (Instructor only)
-- `PUT /api/courses/:id` - Update course (Instructor only)
-- `DELETE /api/courses/:id` - Delete course (Instructor only)
-
-### **Module APIs**
-- `GET /api/courses/:id/modules` - Get course modules
-- `POST /api/courses/:id/modules` - Add module to course
-- `PUT /api/modules/:id` - Update module
-- `DELETE /api/modules/:id` - Delete module
-
-### **Enrollment APIs**
-- `POST /api/enroll/:courseId` - Enroll in course (with test payment)
-- `GET /api/enroll/my-courses` - Get enrolled courses
+| **Endpoint**               | **Method** | **Description**      |
+| -------------------------- | ---------- | -------------------- |
+| `/api/courses/:id/modules` | GET        | Get course modules   |
+| `/api/courses/:id/modules` | POST       | Add module to course |
+| `/api/modules/:id`         | PUT        | Update module        |
+| `/api/modules/:id`         | DELETE     | Delete module        |
 
 ---
 
-## **8. Conclusion**
+## **6. Conclusion**
 
 **LearnX LMS** uses secure authentication and role-based authorization to provide:
 

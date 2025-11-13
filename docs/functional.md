@@ -20,7 +20,7 @@
 
 ## **2. Functional Flow**
 
-### **2.1 User Registration & Login**
+### **I. User Registration & Login**
 
 Shows how users sign up or log in. After validation, a token is generated and they’re redirected to their dashboard based on role.
 
@@ -40,7 +40,7 @@ flowchart TD
 
 ---
 
-### **2.2 Video Playback Flow**
+### **II. Video Playback Flow**
 
 Students open a lesson and play the video directly from Cloudinary. Once the video is completed, they can mark the lesson as done to track progress.
 
@@ -53,7 +53,7 @@ flowchart LR
 
 ---
 
-### **2.3 Enrollment Flow**
+### **III. Enrollment Flow**
 
 Students select a course and proceed to the payment gateway. On successful payment, the course is added to their dashboard and they can start learning. If the payment fails, an error message is shown.
 
