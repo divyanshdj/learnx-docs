@@ -16,7 +16,7 @@
         <link rel="prev" href="../technical/">
       
       
-        <link rel="next" href="../dfd/">
+        <link rel="next" href="../sast_dast/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>CI/CD Pipeline and Deployment Flow - LearnX - Learning Management System</title>
+        <title>Code Merge Workflow - LearnX - Learning Management System</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-create-feature-branch" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CI/CD Pipeline and Deployment Flow
+              Code Merge Workflow
             
           </span>
         </div>
@@ -385,14 +390,20 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -401,7 +412,174 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            CI/CD Pipeline and Deployment Flow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Code Merge Workflow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Merge Workflow
+    
+  </span>
+  
+
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Feature Branch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-implement-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Implement Feature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-push-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Push to GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-create-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Create Pull Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Code Review
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-approval-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Approval &amp; Merge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-production-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Production Release
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Deployment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sast_dast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SAST/DAST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -501,6 +679,86 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Feature Branch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-implement-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Implement Feature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-push-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Push to GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-create-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Create Pull Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Code Review
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-approval-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Approval &amp; Merge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-production-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Production Release
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Deployment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -518,10 +776,37 @@
   
 
 
-  <h1>CI/CD Pipeline and Deployment Flow</h1>
+  <h1>Code Merge Workflow</h1>
 
-<div class="highlight"><pre><span></span><code>Will Update this page later!
+<h3 id="1-create-feature-branch"><strong>1. Create Feature Branch</strong><a class="headerlink" href="#1-create-feature-branch" title="Permanent link">&para;</a></h3>
+<p>Create branch from <code>dev</code> branch.</p>
+<p><strong>Naming:</strong>
+<div class="highlight"><pre><span></span><code>feature/&lt;feature-name&gt;
+</code></pre></div></p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code>feature/course-progress
+</code></pre></div></p>
+<h3 id="2-implement-feature"><strong>2. Implement Feature</strong><a class="headerlink" href="#2-implement-feature" title="Permanent link">&para;</a></h3>
+<p>Write code, test locally, commit changes.</p>
+<p><strong>Commit:</strong>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add progress tracking&quot;</span>
+</code></pre></div></p>
+<h3 id="3-push-to-github"><strong>3. Push to GitHub</strong><a class="headerlink" href="#3-push-to-github" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/&lt;feature-name&gt;
 </code></pre></div>
+<h3 id="4-create-pull-request"><strong>4. Create Pull Request</strong><a class="headerlink" href="#4-create-pull-request" title="Permanent link">&para;</a></h3>
+<p>PR from <code>feature/</code> → <code>develop</code></p>
+<h3 id="5-code-review"><strong>5. Code Review</strong><a class="headerlink" href="#5-code-review" title="Permanent link">&para;</a></h3>
+<p>Review for security, quality, performance.</p>
+<h3 id="6-approval-merge"><strong>6. Approval &amp; Merge</strong><a class="headerlink" href="#6-approval-merge" title="Permanent link">&para;</a></h3>
+<p>Merge to <code>develop</code> after approval.</p>
+<h3 id="7-production-release"><strong>7. Production Release</strong><a class="headerlink" href="#7-production-release" title="Permanent link">&para;</a></h3>
+<p>PR <code>develop</code> → <code>main</code></p>
+<h3 id="8-deployment"><strong>8. Deployment</strong><a class="headerlink" href="#8-deployment" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Frontend:</strong> Vercel</li>
+<li><strong>Backend:</strong> AWS EC2</li>
+</ul>
 
 
 
@@ -568,13 +853,13 @@
         
         
           
-          <a href="../dfd/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Flow Diagrams">
+          <a href="../sast_dast/" class="md-footer__link md-footer__link--next" aria-label="Next: SAST/DAST">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Data Flow Diagrams
+                SAST/DAST
               </div>
             </div>
             <div class="md-footer__button md-icon">

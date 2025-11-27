@@ -388,9 +388,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../cicd/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -399,7 +410,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            CI/CD Pipeline and Deployment Flow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Merge Workflow
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sast_dast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SAST/DAST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -512,44 +581,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-test-implementation-notes" class="md-nav__link">
+  <a href="#4-test-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Test Implementation Notes
+      4. Test Implementation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Test Implementation Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#i-frontend-unit-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      I. Frontend Unit Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ii-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      II. Integration Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iv-test-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      IV. Test Data
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -645,44 +681,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-test-implementation-notes" class="md-nav__link">
+  <a href="#4-test-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Test Implementation Notes
+      4. Test Implementation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Test Implementation Notes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#i-frontend-unit-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      I. Frontend Unit Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ii-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      II. Integration Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iv-test-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      IV. Test Data
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -720,50 +723,26 @@
 <tr>
 <td><strong>REG-01</strong></td>
 <td>Student Register</td>
-<td>1. Fill valid student data<br>2. Submit</td>
+<td>Fill valid student data and Submit</td>
 <td>Account created, redirect to dashboard</td>
 </tr>
 <tr>
 <td><strong>REG-02</strong></td>
 <td>Instructor Register</td>
-<td>1. Fill valid instructor data<br>2. Submit</td>
+<td>Fill valid instructor data and Submit</td>
 <td>Account created, redirect to instructor panel</td>
 </tr>
 <tr>
 <td><strong>REG-03</strong></td>
 <td>Duplicate Email</td>
-<td>1. Use existing email<br>2. Submit</td>
+<td>Use existing email and Submit</td>
 <td>Error: "Email already exists"</td>
 </tr>
 <tr>
 <td><strong>REG-04</strong></td>
 <td>Invalid Email</td>
-<td>1. Enter "invalid-email"<br>2. Submit</td>
+<td>Enter invalid email format and Submit</td>
 <td>Validation error</td>
-</tr>
-<tr>
-<td><strong>REG-05</strong></td>
-<td>Weak Password</td>
-<td>1. Enter "123"<br>2. Submit</td>
-<td>Password requirements error</td>
-</tr>
-<tr>
-<td><strong>REG-06</strong></td>
-<td>Empty Fields</td>
-<td>1. Leave required fields empty<br>2. Submit</td>
-<td>Field validation errors</td>
-</tr>
-<tr>
-<td><strong>REG-07</strong></td>
-<td>Long Inputs</td>
-<td>1. Enter 255 char email<br>2. Submit</td>
-<td>Input length validation</td>
-</tr>
-<tr>
-<td><strong>REG-08</strong></td>
-<td>Special Chars</td>
-<td>1. Use symbols in name<br>2. Submit</td>
-<td>Input sanitization works</td>
 </tr>
 </tbody>
 </table>
@@ -782,44 +761,26 @@
 <tr>
 <td><strong>LOGIN-01</strong></td>
 <td>Student Login</td>
-<td>1. Valid credentials<br>2. Submit</td>
+<td>Valid credentials and Submit</td>
 <td>JWT received, student dashboard</td>
 </tr>
 <tr>
 <td><strong>LOGIN-02</strong></td>
 <td>Instructor Login</td>
-<td>1. Valid credentials<br>2. Submit</td>
+<td>Valid credentials and Submit</td>
 <td>JWT received, instructor panel</td>
 </tr>
 <tr>
 <td><strong>LOGIN-03</strong></td>
 <td>Wrong Password</td>
-<td>1. Valid email + wrong password<br>2. Submit</td>
+<td>Valid email + wrong password and Submit</td>
 <td>Error: "Invalid credentials"</td>
 </tr>
 <tr>
 <td><strong>LOGIN-04</strong></td>
-<td>Non-existent User</td>
-<td>1. Unknown email<br>2. Submit</td>
-<td>Error: "Invalid credentials"</td>
-</tr>
-<tr>
-<td><strong>LOGIN-05</strong></td>
 <td>Empty Credentials</td>
-<td>1. Leave fields blank<br>2. Submit</td>
+<td>Leave fields blank and Submit</td>
 <td>Validation errors</td>
-</tr>
-<tr>
-<td><strong>LOGIN-06</strong></td>
-<td>Session Expiry</td>
-<td>1. Wait for token expiry<br>2. Access protected route</td>
-<td>Auto-logout, redirect to login</td>
-</tr>
-<tr>
-<td><strong>LOGIN-07</strong></td>
-<td>Case Sensitivity</td>
-<td>1. Email with different case<br>2. Submit</td>
-<td>Login successful (case insensitive)</td>
 </tr>
 </tbody>
 </table>
@@ -838,55 +799,39 @@
 <tr>
 <td><strong>AUTH-01</strong></td>
 <td>Student Access</td>
-<td>1. Login as student<br>2. Access student routes</td>
+<td>Login as student and Access student routes</td>
 <td>Access granted</td>
 </tr>
 <tr>
 <td><strong>AUTH-02</strong></td>
 <td>Instructor Access</td>
-<td>1. Login as instructor<br>2. Access instructor routes</td>
+<td>Login as instructor and Access instructor routes</td>
 <td>Access granted</td>
 </tr>
 <tr>
 <td><strong>AUTH-03</strong></td>
 <td>Student → Instructor Routes</td>
-<td>1. Login as student<br>2. Access instructor routes</td>
+<td>Login as student and Access instructor routes</td>
 <td>Access denied (403)</td>
-</tr>
-<tr>
-<td><strong>AUTH-04</strong></td>
-<td>Unauthenticated Access</td>
-<td>1. No login<br>2. Access protected routes</td>
-<td>Redirect to login (401)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="4-test-implementation-notes"><strong>4. Test Implementation Notes</strong><a class="headerlink" href="#4-test-implementation-notes" title="Permanent link">&para;</a></h2>
-<h3 id="i-frontend-unit-tests">I. Frontend Unit Tests<a class="headerlink" href="#i-frontend-unit-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Form validation</li>
-<li>UI state management</li>
-<li>Component rendering</li>
-</ul>
-<h3 id="ii-integration-tests">II. Integration Tests<a class="headerlink" href="#ii-integration-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>API calls with mock responses</li>
-<li>End-to-end user flows</li>
-<li>Error handling</li>
-</ul>
-<h3 id="iv-test-data">IV. Test Data<a class="headerlink" href="#iv-test-data" title="Permanent link">&para;</a></h3>
+<h2 id="4-test-implementation"><strong>4. Test Implementation</strong><a class="headerlink" href="#4-test-implementation" title="Permanent link">&para;</a></h2>
+<p><strong>Frontend Unit Tests</strong>
+- Form validation
+- UI state management
+- Component rendering</p>
+<p><strong>Integration Tests</strong>
+- API calls with mock responses
+- End-to-end user flows
+- Error handling</p>
+<p><strong>Test Data</strong>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">testUsers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">student</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;student@test.com&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">  </span><span class="nx">instructor</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;instructor@test.com&quot;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span><span class="w"> </span>
-<span class="w">    </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">student</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;student@test.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nx">instructor</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;instructor@test.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span><span class="w"> </span><span class="p">}</span>
 <span class="p">};</span>
-</code></pre></div>
+</code></pre></div></p>
 
 
 

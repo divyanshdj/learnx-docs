@@ -384,9 +384,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../cicd/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -395,7 +406,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            CI/CD Pipeline and Deployment Flow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Merge Workflow
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sast_dast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SAST/DAST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -538,18 +607,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-indexing" class="md-nav__link">
+  <a href="#4-relationships" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Indexing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Relationships
+      4. Relationships
     </span>
   </a>
   
@@ -617,18 +677,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-indexing" class="md-nav__link">
+  <a href="#4-relationships" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Indexing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Relationships
+      4. Relationships
     </span>
   </a>
   
@@ -703,50 +754,7 @@ It ensures relational integrity and supports the platform's main functionalities
 </tbody>
 </table>
 <hr />
-<h2 id="4-indexing"><strong>4. Indexing</strong><a class="headerlink" href="#4-indexing" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Collection</th>
-<th>Field(s)</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>USERS</strong></td>
-<td><code>email</code></td>
-<td>Unique login and user search</td>
-</tr>
-<tr>
-<td><strong>USER_ROLES</strong></td>
-<td><code>userId</code>, <code>roleId</code></td>
-<td>Prevent duplicate roles</td>
-</tr>
-<tr>
-<td><strong>COURSES</strong></td>
-<td><code>instructorId</code></td>
-<td>Fetch instructor courses</td>
-</tr>
-<tr>
-<td><strong>COURSES</strong></td>
-<td><code>isPublished</code></td>
-<td>Filter published courses</td>
-</tr>
-<tr>
-<td><strong>MODULES</strong></td>
-<td><code>courseId</code>, <code>order</code></td>
-<td>Maintain module sequence</td>
-</tr>
-<tr>
-<td><strong>ENROLLMENTS</strong></td>
-<td><code>studentId</code>, <code>courseId</code></td>
-<td>Prevent duplicate enrollments</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="5-relationships"><strong>5. Relationships</strong><a class="headerlink" href="#5-relationships" title="Permanent link">&para;</a></h2>
+<h2 id="4-relationships"><strong>4. Relationships</strong><a class="headerlink" href="#4-relationships" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Users ↔ Roles</strong>: Many-to-many via <code>USER_ROLES</code></li>
 <li><strong>Instructor → Courses</strong>: One-to-many</li>
