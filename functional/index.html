@@ -383,45 +383,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-core-functional-modules" class="md-nav__link">
+  <a href="#3-use-case-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Core Functional Modules
+      3. Use Case Summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-use-case-summary" class="md-nav__link">
+  <a href="#4-system-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Use Case Summary
+      4. System Flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-system-flow" class="md-nav__link">
+  <a href="#5-future-scope" class="md-nav__link">
     <span class="md-ellipsis">
-      5. System Flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-edge-case-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Edge Case Handling
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-future-scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Future Scope
+      5. Future Scope
     </span>
   </a>
   
@@ -763,45 +745,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-core-functional-modules" class="md-nav__link">
+  <a href="#3-use-case-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Core Functional Modules
+      3. Use Case Summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-use-case-summary" class="md-nav__link">
+  <a href="#4-system-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Use Case Summary
+      4. System Flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-system-flow" class="md-nav__link">
+  <a href="#5-future-scope" class="md-nav__link">
     <span class="md-ellipsis">
-      5. System Flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-edge-case-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Edge Case Handling
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-future-scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Future Scope
+      5. Future Scope
     </span>
   </a>
   
@@ -874,12 +838,11 @@
     B --&gt;|Sign Up| C[Enter Name, Email, Password, Role]
     C --&gt; D[System Validates &amp; Creates Account]
     B --&gt;|Login| E[Enter Credentials]
-    E --&gt; F[Server Verifies Credentials]
-    F --&gt;|Valid| G[Generate JWT Token]
+    E --&gt;|Valid| G[Generate JWT Token]
     G --&gt; H{User Role}
     H --&gt;|Instructor| I[Redirect to Instructor Dashboard]
     H --&gt;|Student| J[Redirect to Student Dashboard]
-    F --&gt;|Invalid| K[Show Error Message]</code></pre>
+    E --&gt;|Invalid| K[Show Error Message]</code></pre>
 <hr />
 <h3 id="ii-course-creation-management-flow"><strong>II. Course Creation &amp; Management Flow</strong><a class="headerlink" href="#ii-course-creation-management-flow" title="Permanent link">&para;</a></h3>
 <p>Instructors create and manage courses with modules and media uploads.</p>
@@ -903,43 +866,7 @@
     F --&gt; G[Watch Video Content]
     G --&gt; H[Mark Course as Completed]</code></pre>
 <hr />
-<h2 id="3-core-functional-modules"><strong>3. Core Functional Modules</strong><a class="headerlink" href="#3-core-functional-modules" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Module</strong></th>
-<th><strong>Functionality</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Authentication</strong></td>
-<td>Register and login securely using JWT</td>
-</tr>
-<tr>
-<td><strong>Authorization</strong></td>
-<td>Role-based dashboard redirection</td>
-</tr>
-<tr>
-<td><strong>Dashboard</strong></td>
-<td>Personalized interface for each user role</td>
-</tr>
-<tr>
-<td><strong>Course Management</strong></td>
-<td>Instructors create, edit, and delete courses</td>
-</tr>
-<tr>
-<td><strong>Media Management</strong></td>
-<td>Upload and watch videos using Cloudinary</td>
-</tr>
-<tr>
-<td><strong>Enrollment</strong></td>
-<td>Students browse and enroll in courses</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="4-use-case-summary"><strong>4. Use Case Summary</strong><a class="headerlink" href="#4-use-case-summary" title="Permanent link">&para;</a></h2>
+<h2 id="3-use-case-summary"><strong>3. Use Case Summary</strong><a class="headerlink" href="#3-use-case-summary" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -992,7 +919,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="5-system-flow"><strong>5. System Flow</strong><a class="headerlink" href="#5-system-flow" title="Permanent link">&para;</a></h2>
+<h2 id="4-system-flow"><strong>4. System Flow</strong><a class="headerlink" href="#4-system-flow" title="Permanent link">&para;</a></h2>
 <p>Modern web architecture with React frontend and Node.js backend.</p>
 <pre class="mermaid"><code>graph LR
     A[Frontend - React/Vite] --&gt; B[Backend - Node.js/Express]
@@ -1002,39 +929,7 @@
     A --&gt;|JWT Authentication| B
     A --&gt;|PWA| A</code></pre>
 <hr />
-<h2 id="6-edge-case-handling"><strong>6. Edge Case Handling</strong><a class="headerlink" href="#6-edge-case-handling" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><strong>Scenario</strong></th>
-<th><strong>Expected Behavior</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Invalid credentials</td>
-<td>Show error message with validation</td>
-</tr>
-<tr>
-<td>JWT expired</td>
-<td>Auto-redirect to login page</td>
-</tr>
-<tr>
-<td>Unauthorized access</td>
-<td>Redirect to appropriate dashboard</td>
-</tr>
-<tr>
-<td>Video playback issues</td>
-<td>Fallback handling with error states</td>
-</tr>
-<tr>
-<td>Course deletion with enrollments</td>
-<td>Current: Hard delete, Future: Soft delete with archives</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="7-future-scope"><strong>7. Future Scope</strong><a class="headerlink" href="#7-future-scope" title="Permanent link">&para;</a></h2>
+<h2 id="5-future-scope"><strong>5. Future Scope</strong><a class="headerlink" href="#5-future-scope" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Advanced Analytics</strong> - Detailed progress tracking and learning insights</li>
 <li><strong>Payment Integration</strong> - Paid course enrollment system</li>

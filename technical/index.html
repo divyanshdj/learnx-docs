@@ -452,60 +452,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-api-endpoints-reference" class="md-nav__link">
+  <a href="#5-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      5. API Endpoints Reference
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. API Endpoints Reference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#i-authentication-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      I. Authentication Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ii-course-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      II. Course Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iii-module-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      III. Module Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iv-enrollment-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      IV. Enrollment Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Conclusion
+      5. Conclusion
     </span>
   </a>
   
@@ -750,60 +699,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-api-endpoints-reference" class="md-nav__link">
+  <a href="#5-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      5. API Endpoints Reference
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. API Endpoints Reference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#i-authentication-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      I. Authentication Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ii-course-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      II. Course Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iii-module-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      III. Module Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iv-enrollment-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      IV. Enrollment Endpoints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Conclusion
+      5. Conclusion
     </span>
   </a>
   
@@ -838,8 +736,7 @@ It follows a modular <strong>MERN stack architecture</strong> for seamless integ
 Users log in or sign up using email and password.</p>
 <pre class="mermaid"><code>flowchart TD
     A[Open Login Page] --&gt; B[Enter Email &amp; Password]
-    B --&gt; C[Send Credentials to Server]
-    C --&gt; D[Verify in Database]
+    B --&gt; D[Verify in Database]
     D --&gt;|Valid| E[Generate JWT Token]
     D --&gt;|Invalid| F[Show Error Message]
     E --&gt; G{User Role}
@@ -947,137 +844,7 @@ Users log in or sign up using email and password.</p>
 </tbody>
 </table>
 <hr />
-<h2 id="5-api-endpoints-reference"><strong>5. API Endpoints Reference</strong><a class="headerlink" href="#5-api-endpoints-reference" title="Permanent link">&para;</a></h2>
-<h3 id="i-authentication-endpoints"><strong>I. Authentication Endpoints</strong><a class="headerlink" href="#i-authentication-endpoints" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Endpoint</strong></th>
-<th><strong>Method</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>/api/auth/register</code></td>
-<td>POST</td>
-<td>Create new user account</td>
-</tr>
-<tr>
-<td><code>/api/auth/login</code></td>
-<td>POST</td>
-<td>User login and JWT generation</td>
-</tr>
-<tr>
-<td><code>/api/auth/me</code></td>
-<td>GET</td>
-<td>Get current user profile</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ii-course-endpoints"><strong>II. Course Endpoints</strong><a class="headerlink" href="#ii-course-endpoints" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Endpoint</strong></th>
-<th><strong>Method</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>/api/courses</code></td>
-<td>GET</td>
-<td>Get all published courses (with search/filters)</td>
-</tr>
-<tr>
-<td><code>/api/courses</code></td>
-<td>POST</td>
-<td>Create new course (instructor only)</td>
-</tr>
-<tr>
-<td><code>/api/courses/:id</code></td>
-<td>GET</td>
-<td>Get specific course details</td>
-</tr>
-<tr>
-<td><code>/api/courses/:id</code></td>
-<td>PUT</td>
-<td>Update course (instructor only)</td>
-</tr>
-<tr>
-<td><code>/api/courses/:id</code></td>
-<td>DELETE</td>
-<td>Delete course (instructor only)</td>
-</tr>
-<tr>
-<td><code>/api/courses/instructor/:instructorId</code></td>
-<td>GET</td>
-<td>Get instructor's courses</td>
-</tr>
-</tbody>
-</table>
-<h3 id="iii-module-endpoints"><strong>III. Module Endpoints</strong><a class="headerlink" href="#iii-module-endpoints" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Endpoint</strong></th>
-<th><strong>Method</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>/api/modules/course/:courseId</code></td>
-<td>GET</td>
-<td>Get all modules for a course</td>
-</tr>
-<tr>
-<td><code>/api/modules</code></td>
-<td>POST</td>
-<td>Create module (Instructor only)</td>
-</tr>
-<tr>
-<td><code>/api/modules/:id</code></td>
-<td>DELETE</td>
-<td>Delete module (Instructor only)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="iv-enrollment-endpoints"><strong>IV. Enrollment Endpoints</strong><a class="headerlink" href="#iv-enrollment-endpoints" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th><strong>Endpoint</strong></th>
-<th><strong>Method</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>/api/enrollments/course/:courseId</code></td>
-<td>POST</td>
-<td>Enroll in course (Student only)</td>
-</tr>
-<tr>
-<td><code>/api/enrollments/course/:courseId/status</code></td>
-<td>GET</td>
-<td>Check enrollment status</td>
-</tr>
-<tr>
-<td><code>/api/enrollments/course/:courseId</code></td>
-<td>GET</td>
-<td>Get course enrollments (Instructor only)</td>
-</tr>
-<tr>
-<td><code>/api/enrollments/course/:courseId/complete</code></td>
-<td>PATCH</td>
-<td>Mark course as completed (Student only)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="6-conclusion"><strong>6. Conclusion</strong><a class="headerlink" href="#6-conclusion" title="Permanent link">&para;</a></h2>
+<h2 id="5-conclusion"><strong>5. Conclusion</strong><a class="headerlink" href="#5-conclusion" title="Permanent link">&para;</a></h2>
 <p><strong>LearnX LMS</strong> uses secure authentication and role-based authorization to provide:</p>
 <ul>
 <li>Clear separation of <strong>Instructor</strong> and <strong>Student</strong> views</li>
