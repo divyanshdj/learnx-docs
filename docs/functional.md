@@ -30,12 +30,11 @@ flowchart TD
     B -->|Sign Up| C[Enter Name, Email, Password, Role]
     C --> D[System Validates & Creates Account]
     B -->|Login| E[Enter Credentials]
-    E --> F[Server Verifies Credentials]
-    F -->|Valid| G[Generate JWT Token]
+    E -->|Valid| G[Generate JWT Token]
     G --> H{User Role}
     H -->|Instructor| I[Redirect to Instructor Dashboard]
     H -->|Student| J[Redirect to Student Dashboard]
-    F -->|Invalid| K[Show Error Message]
+    E -->|Invalid| K[Show Error Message]
 ```
 
 ---
@@ -74,20 +73,7 @@ flowchart TD
 
 ---
 
-## **3. Core Functional Modules**
-
-| **Module**            | **Functionality**                               |
-| --------------------- | ----------------------------------------------- |
-| **Authentication**    | Register and login securely using JWT           |
-| **Authorization**     | Role-based dashboard redirection                |
-| **Dashboard**         | Personalized interface for each user role       |
-| **Course Management** | Instructors create, edit, and delete courses    |
-| **Media Management**  | Upload and watch videos using Cloudinary       |
-| **Enrollment**        | Students browse and enroll in courses           |
-
----
-
-## **4. Use Case Summary**
+## **3. Use Case Summary**
 
 | **ID** | **Use Case** | **Action** |
 |--------|--------------|------------|
@@ -102,7 +88,7 @@ flowchart TD
 
 ---
 
-## **5. System Flow**
+## **4. System Flow**
 
 Modern web architecture with React frontend and Node.js backend.
 
@@ -118,19 +104,7 @@ graph LR
 
 ---
 
-## **6. Edge Case Handling**
-
-| **Scenario** | **Expected Behavior** |
-|--------------|---------------------|
-| Invalid credentials | Show error message with validation |
-| JWT expired | Auto-redirect to login page |
-| Unauthorized access | Redirect to appropriate dashboard |
-| Video playback issues | Fallback handling with error states |
-| Course deletion with enrollments | Current: Hard delete, Future: Soft delete with archives |
-
----
-
-## **7. Future Scope**
+## **5. Future Scope**
 
 * **Advanced Analytics** - Detailed progress tracking and learning insights
 * **Payment Integration** - Paid course enrollment system

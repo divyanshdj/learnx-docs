@@ -25,20 +25,7 @@ It supports **role-based access**, smooth **video uploads**, and **course manage
 
 ---
 
-## **3. Tech Stack**
-
-| **Layer** | **Technology** | **Purpose** |
-|----------------------------------|----------------------------------|----------------------------------------|
-| Frontend | React + Vite + Tailwind + shadcn | Build a clean and responsive UI |
-| Backend | Node.js + Express | Handle APIs and business logic |
-| Database | MongoDB + Mongoose | Store users, courses, and video data |
-| Media | Cloudinary | Host and manage course videos |
-| Auth | JWT + bcrypt | Provide secure login and user sessions |
-| PWA / Mobile | React + Service Workers | Enable offline access and mobile installation |
-
----
-
-## **4. Key Features**
+## **3. Key Features**
  - Role-based Access (Student/Instructor)
  - Course Creation & Management
  - Video Upload & Streaming
@@ -48,7 +35,7 @@ It supports **role-based access**, smooth **video uploads**, and **course manage
 
 ---
 
-## **5. Conclusion**
+## **4. Conclusion**
 
 LearnX combines powerful backend logic with a fast and modern frontend to deliver a smooth e-learning experience.  
 With **PWA support**, users can also **install LearnX as a mobile app**, making learning accessible anywhere, anytime.

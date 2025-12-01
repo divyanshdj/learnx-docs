@@ -25,16 +25,16 @@ git push origin feature/<feature-name>
 ```
 
 ### **4. Create Pull Request**
-PR from `feature/` → `develop`
+PR from `feature/<feature-name>` → `dev`
 
 ### **5. Code Review**
 Review for security, quality, performance.
 
 ### **6. Approval & Merge**
-Merge to `develop` after approval.
+Merge to `dev` after approval.
 
 ### **7. Production Release**
-PR `develop` → `main`
+PR `dev` → `main`
 
 ### **8. Deployment**
 - **Frontend:** Vercel

@@ -15,8 +15,7 @@ Users log in or sign up using email and password.
 ```mermaid
 flowchart TD
     A[Open Login Page] --> B[Enter Email & Password]
-    B --> C[Send Credentials to Server]
-    C --> D[Verify in Database]
+    B --> D[Verify in Database]
     D -->|Valid| E[Generate JWT Token]
     D -->|Invalid| F[Show Error Message]
     E --> G{User Role}
@@ -66,47 +65,7 @@ flowchart TD
 
 ---
 
-## **5. API Endpoints Reference**
-
-### **I. Authentication Endpoints**
-
-| **Endpoint**         | **Method** | **Description**               |
-| -------------------- | ---------- | ----------------------------- |
-| `/api/auth/register` | POST       | Create new user account       |
-| `/api/auth/login`    | POST       | User login and JWT generation |
-| `/api/auth/me`       | GET        | Get current user profile      |
-
-### **II. Course Endpoints**
-
-| **Endpoint**       | **Method** | **Description**                     |
-| ------------------ | ---------- | ----------------------------------- |
-| `/api/courses`     | GET        | Get all published courses (with search/filters)            |
-| `/api/courses`     | POST       | Create new course (instructor only) |
-| `/api/courses/:id` | GET        | Get specific course details                  |
-| `/api/courses/:id` | PUT        | Update course (instructor only)     |
-| `/api/courses/:id` | DELETE     | Delete course (instructor only)     |
-| `/api/courses/instructor/:instructorId` | GET | Get instructor's courses |
-
-### **III. Module Endpoints**
-
-| **Endpoint**               | **Method** | **Description**      |
-| -------------------------- | ---------- | -------------------- |
-| `/api/modules/course/:courseId` | GET        | Get all modules for a course   |
-| `/api/modules` | POST       | Create module (Instructor only) |
-| `/api/modules/:id`         | DELETE     | Delete module (Instructor only)       |
-
-### **IV. Enrollment Endpoints**
-
-| **Endpoint**             | **Method** | **Description**             |
-| ------------------------ | ---------- | --------------------------- |
-| `/api/enrollments/course/:courseId`  | POST       | Enroll in course (Student only)            |
-| `/api/enrollments/course/:courseId/status` | GET        | Check enrollment status |
-| `/api/enrollments/course/:courseId` | GET | Get course enrollments (Instructor only) |
-| `/api/enrollments/course/:courseId/complete` | PATCH | Mark course as completed (Student only) |
-
----
-
-## **6. Conclusion**
+## **5. Conclusion**
 
 **LearnX LMS** uses secure authentication and role-based authorization to provide:
 
