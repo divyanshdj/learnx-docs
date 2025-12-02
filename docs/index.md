@@ -19,7 +19,7 @@ It supports **role-based access**, smooth **video uploads**, and **course manage
 
 | **Actor** | **Roles / Responsibility** |
 |------------|----------------------------|
-| **Instructor** | Creates and manages courses, uploads videos, and monitors enrollments. |
+| **Instructor** | Creates and manages courses, uploads videos, and modules. |
 | **Student** | Enrolls in courses, views video content, and tracks progress. |
 | **System** | Handles authentication, video storage, progress tracking, and overall user access control. |
 

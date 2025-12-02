@@ -95,8 +95,8 @@ Modern web architecture with React frontend and Node.js backend.
 ```mermaid
 graph LR
     A[Frontend - React/Vite] --> B[Backend - Node.js/Express]
-    B --> C[(Database - MongoDB)]
-    B --> D[(Cloudinary - Media Storage)]
+    B <--> C[(Database - MongoDB)]
+    B <--> D[(Cloudinary - Media Storage)]
     A -->|REST API Calls| B
     A -->|JWT Authentication| B
     A -->|PWA| A
