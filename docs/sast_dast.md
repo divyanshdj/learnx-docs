@@ -26,4 +26,12 @@
 
 ---
 
-## **DAST Status:** Pending backend deployment completion
+# **DAST - Dynamic Application Security Testing** 
+
+- DAST scans the running deployment instead of code.
+- Aikido checked the live URL: https://learnx-lms.vercel.app
+
+
+### **Report:**
+
+![logo](assets/DAST_Aikido.png)
