@@ -1,8 +1,8 @@
 site_name: LearnX - Learning Management System
 site_author: Divyansh Jain
 site_description: A simple and scalable LMS built using the MERN stack with PWA features.
-repo_url: https://github.com/divyanshgkmit/learnx-docs
-repo_name: divyanshgkmit/learnx-docs
+repo_url: https://github.com/divyanshdj/learnx-docs
+repo_name: divyanshdj/learnx-docs
 
 theme:
   name: material
@@ -46,7 +46,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/divyanshgkmit
+      link: https://github.com/divyanshdj
     - icon: fontawesome/solid/paper-plane
       link: mailto:divyanshjain@gkmit.co
 
